@@ -171,4 +171,5 @@ do_install() {
     do_install_tar
 }
 
+## this is main
 do_install
