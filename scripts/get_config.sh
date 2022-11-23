@@ -91,7 +91,7 @@ get_release_version() {
         version=${INSTALL_CONFIGURATION_VERSION}
     else
         info "finding release for channel ${INSTALL_CONFIGURATION_CHANNEL}"
-        INSTALL_CONFIGURATION_CHANNEL_URL=${INSTALL_CONFIGURATION_CHANNEL_URL:-'https://update.configuration.io/v1-release/channels'}
+        INSTALL_CONFIGURATION_CHANNEL_URL=""
         version_url="${INSTALL_CONFIGURATION_CHANNEL_URL}/${INSTALL_CONFIGURATION_CHANNEL}"
         case ${DOWNLOADER} in
         *curl)
